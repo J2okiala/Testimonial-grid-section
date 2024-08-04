@@ -2,13 +2,13 @@
 
 
 :root{
-    Moderate violet: hsl(263, 55%, 52%)
-    Very dark grayish blue: hsl(217, 19%, 35%)
-    Very dark blackish blue: hsl(219, 29%, 14%)
-    White: hsl(0, 0%, 100%)
-    Light gray: hsl(0, 0%, 81%)
-    Light grayish blue: hsl(210, 46%, 95%)
-    hsl(228, 45%, 44%)
+    --Moderate violet: hsl(263, 55%, 52%)
+    --Very dark grayish blue: hsl(217, 19%, 35%)
+    --Very dark blackish blue: hsl(219, 29%, 14%)
+    --White: hsl(0, 0%, 100%)
+    --Light gray: hsl(0, 0%, 81%)
+    --Light grayish blue: hsl(210, 46%, 95%)
+    --hsl(228, 45%, 44%)
 }
 
 /* RESET */
@@ -18,7 +18,15 @@
     box-sizing: border-box;
 }
 
+
 /*  COMON CLASSES */
+
+body {
+    font-family: 'Barlow Semi', 'Condensed';
+    background: hsl(210, 46%, 95%);
+    color: hsl(0, 0%, 100%);
+
+}
 
 
 .container {
@@ -74,6 +82,11 @@ article {
 
 }
 
+p {
+    line-height: 1.4;
+}
+
+
 /* COMMMON STYLE */
 
 .color-Grey {
@@ -103,27 +116,15 @@ article {
 
 }
 
-p {
-    line-height: 1.4;
-}
-
-body {
-    font-family: 'Barlow Semi', 'Condensed';
-    background: hsl(210, 46%, 95%);
-    color: hsl(0, 0%, 100%);
-
-}
-
-
-
-
-
+/* Version Mobile: 375px */
 
 @media (min-width: 640px) {
     .container {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+/* Version Desktop: 1440px */
 
 @media (min-width: 1280px) {
     .container {
